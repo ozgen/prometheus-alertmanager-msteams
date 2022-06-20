@@ -32,25 +32,28 @@ Then the results should be :
 
 In prometheus client:
 
-![alt tag](https://github.com/ozgen/prometheus-alertmanager-msteams/images/prometheus.png)
+![alt tag](https://github.com/ozgen/prometheus-alertmanager-msteams/blob/main/images/prometheus.png)
 
 
 In AlertManager client:
 
-![alt tag](https://github.com/ozgen/prometheus-alertmanager-msteams/images/alertmanager.png)
+![alt tag](https://github.com/ozgen/prometheus-alertmanager-msteams/blob/main/images/alertmanager.png)
 
 
 In Msteams client:
 
-![alt tag](https://github.com/ozgen/prometheus-alertmanager-msteams/images/msteams.png)
+![alt tag](https://github.com/ozgen/prometheus-alertmanager-msteams/blob/main/images/msteams.png)
 
 
 
 
+## Resources
+https://github.com/prometheus-msteams/prometheus-msteams/blob/master/chart/prometheus-msteams/README.md
 
 
+https://www.youtube.com/watch?v=x2qTvTN8YKI
 
-
+https://www.youtube.com/watch?v=bPHOI29rwB0
 
 
 [blog]: https://lapee79.github.io/en/article/prometheus-alertmanager-with-msteams/
