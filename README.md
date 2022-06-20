@@ -50,6 +50,7 @@ In Msteams client:
 ## Resources
 
 https://lapee79.github.io/en/article/prometheus-alertmanager-with-msteams/
+
 https://github.com/prometheus-msteams/prometheus-msteams/blob/master/chart/prometheus-msteams/README.md
 
 
