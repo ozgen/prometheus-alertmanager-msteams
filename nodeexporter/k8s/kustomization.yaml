@@ -1,0 +1,5 @@
+namespace: monitoring
+
+resources: 
+  - deamonset.yaml
+  - service.yaml

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: alertmanager
+  labels:
+    name: alertmanager
+spec:
+  ports:
+  - name: alertui
+    port: 33333
+    protocol: TCP
+    targetPort: 33333
+  selector:
+    name: alertmanager
+  clusterIP: None

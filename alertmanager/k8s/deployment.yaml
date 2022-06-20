@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alertmanager
+  labels:
+    deployTo: logmon01
+spec:
+  selector:
+    matchLabels:
+      name: alertmanager
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: alertmanager
+    spec:
+      containers:
+      - name: alertmanager
+        image: prom/alertmanager:v0.24.0
+        args:
+        - "--config.file=/mnt/alertmanager-conf/alertmanager.yaml"
+        - "--web.listen-address=:33333"
+        ports:
+        - containerPort: 33333
+        volumeMounts:
+        - name: alertmanager-config-volume
+          mountPath: /mnt/alertmanager-conf
+      volumes:
+      - name: alertmanager-config-volume
+        configMap:
+          name: alertmanager-config

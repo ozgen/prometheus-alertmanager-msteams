@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alertmanager-config
+data:
+  alertmanager.yaml: |
+    route: # default route
+      receiver: "default-receiver" # receiver for this route
+      group_wait: 10s # time to *initially* wait to get new alerts. if there's no new alerts for 15m; initial alert will be delivered
+      group_interval: 10s # time to wait *after initial* wait to send group of alerts
+      repeat_interval: 1h # time to wait before sending same alert again
+      group_by: ["alertname"] # arranges alert by grouping them based on 'group_by' into alert groups
+    inhibit_rules:
+     - source_match:
+         severity: "critial"
+       target_match:
+         severity: "warning"
+       equal: ["alertname", "dev", "instance"]
+        
+    receivers:
+    - name: "default-receiver"
+      webhook_configs:
+      - url: "http://prometheus-msteams:2000/alertmanager"
+        send_resolved: true

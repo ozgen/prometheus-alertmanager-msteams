@@ -1,0 +1,8 @@
+namespace: monitoring
+
+resources: 
+  - configmap.yaml
+  - alertrules.yaml
+  - roles.yaml
+  - statefulset.yaml
+  - service.yaml
