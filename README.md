@@ -1,6 +1,6 @@
 # prometheus-alertmanager-msteams
 
-This repository is an example of how to configure prometheus, alertmanager and prometheus-msteams for notifiying msteams channel. This repository inspired from that [blog].  
+This repository is an example of how to configure prometheus, alertmanager and prometheus-msteams for notifiying msteams channel. This repository is inspired from that [blog].  
 The implementation is declerative, so Helm is not used. (Only used for to generate prometheus-msteams yaml files like that `helm template prometheus-msteams/`
  ).  
 ## How to Setup?
