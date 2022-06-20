@@ -58,5 +58,6 @@ https://www.youtube.com/watch?v=x2qTvTN8YKI
 
 https://www.youtube.com/watch?v=bPHOI29rwB0
 
+https://devopscube.com/node-exporter-kubernetes/
 
 [blog]: https://lapee79.github.io/en/article/prometheus-alertmanager-with-msteams/
