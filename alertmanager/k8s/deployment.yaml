@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: alertmanager
-  labels:
-    deployTo: logmon01
 spec:
   selector:
     matchLabels:
